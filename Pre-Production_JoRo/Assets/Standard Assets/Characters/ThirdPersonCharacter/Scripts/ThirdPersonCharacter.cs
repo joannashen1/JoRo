@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -30,6 +31,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         CapsuleCollider m_Capsule;
         bool m_Crouching;
 
+        public Text countText;
+        public Text winText;
+        private static int count;
+        private bool youWin;
+        private float yPos;
+        private AudioSource seedPop;
+
 
         void Start()
         {
@@ -41,6 +49,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
+
+            seedPop = GetComponent<AudioSource>();
         }
 
 
@@ -223,45 +233,65 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+
+
+
+
+
+
         void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Seed"))
             {
                 other.gameObject.SetActive(false);
-                //seedPop.Play();
-                //count = count + 1;
+                seedPop.Play();
+                count = count + 1;
                 //count = 10;
-                //SetCountText();
+                SetCountText();
             }
 
-            //if (other.gameObject.CompareTag("EndBox") && count >= 15)
-            if (other.gameObject.CompareTag("EndBox"))
+            if (other.gameObject.CompareTag("EndBox") && count >= 15)
+
             {
                 Debug.Log("show win text");
                 //winText.text = "You did it! You're flying!";
                 youWin = true;
                 GameObject birbchild = GameObject.FindGameObjectWithTag("birb");
-                if (birbchild)
+
+
+                if (other.gameObject.CompareTag("EndBox") && count < 15)
                 {
-                    Debug.Log("fly anim on");
-                    birb_anim = birbchild.GetComponent<Animator>();
-                    birb_anim.Play("fly");
+                    Debug.Log("collided with box");
+                    SceneManager.LoadScene(2);
+
                 }
 
-            }
-
-            if (other.gameObject.CompareTag("EndBox") && count < 15)
-            {
-                Debug.Log("collided with box");
-                SceneManager.LoadScene(2);
-
-            }
-
-            if (other.gameObject.CompareTag("Respawn"))
-            {
-                Debug.Log("collided with restart box");
-                SceneManager.LoadScene(1);
+                if (other.gameObject.CompareTag("Respawn"))
+                {
+                    Debug.Log("collided with restart box");
+                    SceneManager.LoadScene(1);
+                }
             }
         }
+
+        void SetCountText()
+        {
+            countText.text = "Seeds: " + count.ToString();
+            //countText.text = "Seeds: " + 10;
+        }
+
+        //private void Update()
+        //{
+        //    Debug.Log("fly baby fly");
+        //    //yPos = transform.parent.position.y;
+        //    if (youWin)
+        //    {
+        //        //m_Rigidbody.AddForce(transform.position * 5);
+        //        m_Rigidbody.AddForce(0, 10.0f, 5.0f, ForceMode.Impulse);
+        //        //yPos++;
+        //        Debug.Log("go up");
+        //        //transform.parent.position = new Vector3(transform.parent.position.x, yPos, transform.parent.position.z);
+        //    }
+        //}
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 520803024}
   - component: {fileID: 520803023}
   m_Layer: 0
-  m_Name: Game_Options 1
+  m_Name: Game_Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,6 +40,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 520803022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65586a5fff702c144910acb7f1faeff9, type: 3}
+  m_Script: {fileID: 11500000, guid: db40a362a3692c744beab33a1cb9a826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
