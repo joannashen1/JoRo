@@ -8,6 +8,11 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Game_Options
     - Seeds
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -45,6 +50,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -71,28 +78,38 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9722}
     - Class: 114
-      Script: {instanceID: 9866}
+      Script: {instanceID: 9888}
     - Class: 114
-      Script: {instanceID: 9974}
+      Script: {instanceID: 9996}
     - Class: 114
-      Script: {instanceID: 9976}
+      Script: {instanceID: 9998}
     - Class: 114
-      Script: {instanceID: 10004}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10184}
+      Script: {instanceID: 10206}
     - Class: 114
-      Script: {instanceID: 10308}
+      Script: {instanceID: 10330}
     - Class: 114
-      Script: {instanceID: 10426}
+      Script: {instanceID: 10360}
     - Class: 114
-      Script: {instanceID: 10536}
+      Script: {instanceID: 10448}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 10558}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 10956}
+    - Class: 114
+      Script: {instanceID: 10970}
+    - Class: 114
+      Script: {instanceID: 11214}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11584}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
