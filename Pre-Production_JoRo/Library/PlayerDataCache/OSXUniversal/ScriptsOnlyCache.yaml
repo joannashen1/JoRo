@@ -1042,4 +1042,4 @@ ScriptsOnlyBuild:
   platform: 2
   scenePathNames:
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/joann/OneDrive/Documents/JoRo/Builds/Mac/Birb_runner.app
+  playerPath: D:/Unity_Projects/CTIN - 532 - Production I/Github/JoRo/Builds/Mac/Birb_Runner.app
