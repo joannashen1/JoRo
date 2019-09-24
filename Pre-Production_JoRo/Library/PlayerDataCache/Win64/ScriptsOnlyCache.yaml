@@ -8,18 +8,12 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Game_Options
     - Seeds
-    Unity.TextMeshPro.dll:
-    - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -51,8 +45,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -79,38 +71,28 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 109
-      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9888}
+      Script: {instanceID: 9866}
     - Class: 114
-      Script: {instanceID: 9996}
+      Script: {instanceID: 9974}
     - Class: 114
-      Script: {instanceID: 9998}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 10026}
+      Script: {instanceID: 10004}
     - Class: 114
-      Script: {instanceID: 10206}
+      Script: {instanceID: 10184}
     - Class: 114
-      Script: {instanceID: 10330}
+      Script: {instanceID: 10308}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 10426}
     - Class: 114
-      Script: {instanceID: 10448}
+      Script: {instanceID: 10536}
     - Class: 114
-      Script: {instanceID: 10558}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 10956}
-    - Class: 114
-      Script: {instanceID: 10970}
-    - Class: 114
-      Script: {instanceID: 11214}
-    - Class: 114
-      Script: {instanceID: 11378}
-    - Class: 114
-      Script: {instanceID: 11584}
+      Script: {instanceID: 11562}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1043,4 +1025,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Level1.unity
-  playerPath: D:/Unity_Projects/CTIN - 532 - Production I/Github/JoRo/Builds/Windows/Pre-Production_JoRo.exe
+  playerPath: C:/Users/joann/OneDrive/Documents/JoRo/Builds/Windows/Birb_runner/Pre-Production_JoRo.exe
