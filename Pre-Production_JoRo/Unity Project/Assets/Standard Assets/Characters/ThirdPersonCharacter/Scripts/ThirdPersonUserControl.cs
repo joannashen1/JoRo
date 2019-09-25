@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (!m_Jump)
             {
+                Debug.Log("Space is pressed");
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
         }
