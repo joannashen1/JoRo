@@ -21,7 +21,7 @@ public class Game_Options : MonoBehaviour
             Application.Quit();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Space pressed");
             SceneManager.LoadScene(1);
